@@ -1,0 +1,15 @@
+body {
+    align-content: center;
+    text-align: justify;
+    
+
+}
+
+.header{
+    align-content: center;
+}
+
+.selected-section{
+    border-color: #9d9d9d;
+    color: #101010;
+}
