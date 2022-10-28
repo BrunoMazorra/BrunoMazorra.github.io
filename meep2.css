@@ -54,8 +54,8 @@ div#effect_object_r p:hover span {
 }
 
 body {
-    background: #fff;
-    color: #000;
+    background: rgb(56, 54, 54);
+    color: rgb(228, 227, 227);
     line-height: 133%;
     margin: 0 1em;
     padding: 0;
