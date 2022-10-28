@@ -1,1 +1,164 @@
-<h1>Hello World!</h1>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Tarun Chitra</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/css/meep2.css" title="veryplaintxt" />
+
+<style type="text/css" media="all">
+/*<![CDATA[*/
+/* CSS inserted by theme options */
+body{font-family:'times new roman',times,serif;font-size:90%;}
+body div#container { float: left; margin: 0 -200px 2em 0; } 
+body div#content { margin: 3em 200px 0 0; } 
+body div.sidebar { float: right; }
+body div#content div.hentry{text-align:left;}
+body div#content h2,div#content h3,div#content h4,div#content h5,div#content h6{font-family:arial,helvetica,sans-serif;}
+body div#wrapper{max-width:55em;min-width:35em;width:80%;}
+body div.sidebar{text-align:left;}
+/*]]>*/
+</style>
+
+<script type="text/javascript" src="/mathjax/MathJax.js">
+	MathJax.Hub.Config({		
+		    extensions: ["tex2jax.js","TeX/noErrors.js"],
+			jax: ["input/TeX","output/HTML-CSS"],
+			tex2jax: {inlineMath: [['$','$'],["\\(","\\)"]]},
+			"HTML-CSS": {availableFonts:["TeX"]}
+    });
+</script>
+
+<script language ="javascript">
+<!-- Begin
+
+var theImages = new Array()
+
+theImages[0] = '/pics/dirac.jpg'
+theImages[1] = '/pics/ramanujan.jpg'
+theImages[2] = '/pics/surrealist2.jpg'
+theImages[3] = '/pics/surrealist_balloon.jpg'
+
+
+var j = 0
+
+var p = theImages.length;
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+   preBuffer[i] = new Image()
+   preBuffer[i].src = theImages[i]
+}
+
+var whichImage = Math.round(Math.random()*(p-1));
+		function showImage(){
+			document.write('<img src="'+theImages[whichImage]+'" width="308" height="400">');
+		}
+//  End -->
+</script>
+
+
+</head>
+
+
+
+ 
+<body class="wordpress y2009 m04 d05 h10 page page-author-admin loggedin">
+
+<div id="wrapper">
+
+	<div id="header">
+		<h1 id="blog-title"><a href="index.shtml"><script type="math/tex"> \mathfrak{Tarun} \; \mathfrak{Chitra} </script>
+</a></h1>
+		<div id="blog-description">Ithaca, New York | Hockessin, Delaware</div>
+	</div><!-- #header -->
+<div id="globalnav"><ul id="menu">
+    <li class="page_item_home home-link"><a href="biography.html" title="About Me" rel="home">About Me</a></li><li class="page_item page-item-2 current_page_item"><a href="papers.html" title="Papers">Papers</a></li><li class="page_item page-item-68"><a href="http://tarunchitra.com/colorfulblog" title="Blog">Blog</a></li><li class="page_item page-item-76"><a href="http://catchysongoftheday.com" title="Music Blog" rel="home">Music Blog</a></li><li class="page_item page-item-2 current_page_item"><a href="contact.html" title="Contact">Contact</a></li></ul></div>
+
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+
+
+
+
+<p> Since I'm still building this page, I figured I ought to use the brilliance of MathJax to depict some of the most amazing formulae I've seen. If there are any mistakes or if my cursory explanations are hard to understand, feel free to contact me at <script type="math/tex; mode=display"> \text{me } [at]\text{ TarunChitra }[dot]\text{ com}.  </script></p>
+
+
+
+
+[an error occurred while processing this directive]
+
+<p> <b> Elegance via Equality:  </b> <font size = "3"> <i> Bott Periodicity </i>  </font></p><br>
+
+<font size="2"> <b> History </b> </font> <br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Of course, I can't give a full-decription of Bott Periodcity, since I've only grasped the proof recently. So what is Bott Periodicity and why is it so important to determining how "division" works in higher-dimensions? <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;One of the problems that has perplexed mathematicians for centuries is the idea of higher-dimensional <i> division algebras </i>. A division algebra in a few words is a mathematical object that has two operations, one commutative (i.e. addition) and one not (i.e. multiplication), such that the non-commutative operation has inverses.<sup id="cite_ref-0" class="reference"><a href="#cite_note-0" title="">[1]</a></sup> This idea at first seems a bit far-fetched, since the idea of extending the concept of division in non-commutative space seems to bear unmotivated by the real-world. Fortunately, nature had a trick up her sleeve. In two-dimensions, it is relatively clear that rotations commute: If I rotate a pencil by $30^{\circ}$ and then again by $15^{\circ}$, then I get to the same point if I first rotate by $15^{\circ}$ and then by $30^{\circ}$. Unfortunately, we don't have the same luxury in three-dimensions. If you take an object and rotate in $45^{\circ}$ relative to a distinguished $x$-axis and then $45^{\circ}$ relative to a distinguished $y$-axis, you will find that swapping the order of rotations takes you to a different place. A slightly more mathematical way to look at this would be to consider the rotation matrices for the $x$-axis rotation and the $y$-axis rotation. If we have an orthonormal basis $(\hat{x},\hat{y},\hat{z})$ of $\mathbb{R}^3$, a rotation matrix $S \in \mathsf{GL}(3,\mathbb{R})$ will need to preserve orthonormality. The set of matrices that accomplishes this is called the orthogonal group, $\mathsf{O}(3,\mathbb{R})$. In terms of rotations, we would also like to have a rotation that preserves orientation. Physically this represents the fact that Newton's Laws implicitly choose a distinguished orientation (e.g. right-hand rule). Topologically, this says that we only want to consider the connected component containing the identity (the identity is an orientation-preserving map), since this is a subgroup. This subgroup is called the <i> special orthogonal group</i>, $\mathsf{SO}(3,\mathbb{R})$.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Okay, so let's give a bit of concrete proof that rotations don't commute. Recall that a 2-dimensional rotation of an angle $\theta$ has the following $2\times 2$ representation,
+$$\left( \begin{array}{cc} \cos \theta & \sin \theta \\ -\sin \theta & \cos \theta \end{array} \right)$$
+As such a rotation about the $x$-axis of an angle $\theta_1$ has a $3\times 3$ representation $A_x$,
+$$A_x := \left( \begin{array}{ccc} 1 & 0 & 0 \\ 0 & \cos \theta_1 & \sin\theta_1 \\ 0 & -\sin\theta_1 & \cos \theta_1 \end{array} \right) $$
+and a rotation about the $y$-axis of an angle $\theta_2$ has a $3 \times 3$ representation $A_y$,
+$$ A_y := \left( \begin{array}{ccc} \cos \theta_2 & 0 & \sin \theta_2 \\ 0 & 1 & 0 \\ -\sin\theta_2 & 0 & \cos \theta_2 \end{array} \right)$$
+Now let's compute the matrix commutator $[A_x, A_y]:= A_x A_y - A_y A_x$.  Note that,
+$$ A_x A_y = \left( \begin{array}{ccc} \cos \theta_2 & 0 & \sin \theta_2 \\ -\sin \theta_1 \sin \theta_2 & \cos\theta_1 & \sin\theta_1 \cos \theta_2 \\
+-\cos\theta_1 \sin \theta_2 & -\sin \theta_1 & \cos\theta_1 \cos \theta_2
+ \end{array} \right)$$
+and
+$$ A_y A_x = \left(
+\begin{array}{ccc}
+\cos \theta_2 & -\sin\theta_1 \sin \theta_2 & \cos \theta_1 \sin\theta_2 \\
+0 & \cos \theta_1 & \sin \theta_1 \\
+-\sin \theta_2 & -\sin\theta_1 \cos \theta_2 & \cos \theta_1 \cos \theta_2
+\end{array}
+\right)
+$$
+Hence we have the commutator,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1" title="">[2]</a></sup> 
+$$
+[A_x, A_y] = \left(\begin{array}{ccc}
+0 & \sin\theta_1 \sin\theta_2 & \sin\theta_2 \left(1 - \cos \theta_1 \right) \\
+-\sin\theta_1 \sin \theta_2 & 0 & -\sin\theta_1 \left(\cos\theta_2 - 1 \right)\\
+\sin\theta_2 \left(1 - \cos\theta_1 \right) & \sin\theta_1 \left(\cos\theta_2 - 1 \right)& 0 \end{array}\right)
+$$
+If $\theta_1 = \theta_2 = 45^{\circ}$, as in our previous example, then the commutator doesn't vanish and as such the rotations do not commute. So what does this actually mean?<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp; In the late-1800s the famous Mathematician, Physicist and Polymath <a href="http://en.wikipedia.org/wiki/William_Rowan_Hamilton"> William Rowan Hamilton </a> discovered that he could describe rotations in space by using a non-commutative division algebra that is now known as 
+the <i>Hamiltonian numbers</i>, $\mathbb{H}$.</p>
+
+<center> <b> To be completed $\ldots$ </b> </center>
+
+<a name="Footnotes"></a><h3> <span class="mw-headline">Footnotes</span></h3>
+<ol class="references"><li id="cite_note-0"><a href="#cite_ref-0" title="">$\uparrow$ </a> To those who have some experience with abstract algebra, this description sounds more like a ring and not an algebra. However the idea here is to equip a vector space (which has the additional invariance under scalar multiplication) with a product operation.</li>
+
+<li id="cite_note-1"><a href="#cite_ref-1" title="">$\uparrow$ </a> Note that the commutator yields a skew-symmetric, traceless matrix. This implies that the commutator is contained in $\text{Lie}\left(\mathsf{SO}(3)\right) \cong \mathfrak{so}(3)$. This is a feature unique to Matrix Lie Groups. For instance see Hall, <i>Lie Groups, Lie Algebras, and Representations</i>, Chapter 1.</li></ol>
+
+
+
+
+
+
+<div id="footer">
+		<span id="copyright">&copy; 2010 <a href="index.shtml" title="jmvarese.com">Tarun Chitra</a></span>
+		<span class="meta-sep"><script type = "math/tex"> \wr </script></span>
+		<span id="generator-link"><a href="http://www.mathjax.org/">
+    <img src="http://www.mathjax.org/badge.gif" border="0" alt="Powered by MathJax" title="Powered by MathJax" width = "60" height = "20" />
+</a></span>
+		<span class="meta-sep">
+		<script type = "math/tex"> \wr </script>
+		</span>
+		<span id="theme-link"> Thanks for the <a href="http://www.plaintxt.org/themes/veryplaintxt/" title="veryplaintxt theme for WordPress" rel="follow designer">veryplaintxt</a> theme, <span class="vcard"><a class="url fn n" href="http://scottwallick.com/" title="scottwallick.com" rel="follow designer"><span class="given-name">Scott</span><span class="additional-name"> Allan</span><span class="family-name"> Wallick</span></a></span>.</span>
+		<br/>
+		<span id = "w3c-link"> Hooray for Standards and iPhones!: 
+		<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.tarunchitra.com%2F&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0&amp;user-agent=W3C_Validator%2F1.1"> xhtml</a>, 
+		<a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Ftarunchitra.com&amp;profile=css21&amp;usermedium=all&amp;warning=1&amp;lang=en"> CSS </a>
+		</span>
+	</div><!-- #footer -->
+</div>
+</body>
+</html>
